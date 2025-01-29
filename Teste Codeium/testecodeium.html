@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Produtos e Serviços</title>
+    <style>
+        /* Estilos globais */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        nav li {
+            margin-right: 20px;
+        }
+        
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+        
+        nav a:hover {
+            color: #ccc;
+        }
+        
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        section {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        h2 {
+            margin-top: 0;
+        }
+        
+        .produtos-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .produto {
+            margin: 20px;
+            width: calc(33.33% - 20px);
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .produto img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        
+        @media (max-width: 768px) {
+            .produto {
+                width: calc(50% - 20px);
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .produto {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="produtos">
+            <h2>Produtos</h2>
+            <div class="produtos-container">
+                <!-- Aqui você pode adicionar os produtos -->
+                <div class="produto">
+                    <h3>Produto 1</h3>
+                    <p>Descrição do produto 1</p>
+                    <img src="https://picsum.photos/200/300" alt="Produto 1">
+                </div>
+                <div class="produto">
+                    <h3>Produto 2</h3>
+                    <p>Descrição do produto 2</p>
+                    <img src="https://picsum.photos/200/301" alt="Produto 2">
+                </div>
+                <!-- ... -->
+            </div>
+        </section>
+        <section id="servicos">
+            <h2>Serviços</h2>
+            <!-- Aqui você pode adicionar os serviços -->
+        </section>
+        <section id="sobre">
+            <h2>Sobre</h2>
+            <!-- Aqui você pode adicionar informações sobre a empresa -->
+        </section>
+        <section id="contato">
+            <h2>Contato</h2>
+            <!-- Aqui você pode adicionar informações de contato -->
+        </section>
+    </main>
+</body>
+</html>

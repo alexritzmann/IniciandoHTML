@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TESTE HTML
+
+</HTML>
+</title>
+</head>
+
+<body>
+    <header>
+        <h1>
+            Primeiro Teste HTML Alex
+        </h1>
+        <nav>
+            <li><a href="#objetivo">Objetivo</a></li>
+            <li><a href="#regras">Regras</a></li>
+            <li><a href="#formulario">Formulário</a></li>
+
+        </nav>
+    </header>
+    <section id="objetivo">
+        <h2>Objetivo:</h2>
+        <h3>Criar formulário contendo os seguintes campos:</h3>
+        <ul>
+            <li>Nome Completo</li>
+            <li>E-mail</li>
+            <li>Idade</li>
+            <li>Para qual matéria você está se candidatando para lecionar:
+                (matemática, português, biologia, ciências, história, geografia ou artes)</li>
+            <li>Turnos disponíveis para lecionar</li>
+            <li>Nível de escolaridade: Ensino superior completo, Cursando mestrado,
+                Mestrado completo, Cursando doutorado, Doutorado completo.</li>
+            <li>Descrição sobre si mesmo
+                (máximo 200 caracteres)</li>
+        </ul>
+    </section>
+
+    <section id="regras">
+        <h2>Regras: </h2>
+        <h3>O formulário deve ter:</h3>
+
+        <ul>
+            <li>O Formulário deve ter ID e nome de "FORM"</li>
+            <li>Os campos devem ser, respectivamente: NOME, EMAIL, IDADE, ASSUNTO,
+                TURNOSDISPONIVEIS, ESCOLARIDADE, DESCRICAO</li>
+            <li>O campo com as opções de matérias deve ter um ID também.</li>
+            <li>Código precisa ser semântico e com acessibilidade</li>
+        </ul>
+
+    </section>
+
+    <section id="formulario">
+        <h2>Formulário de cadastro</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Resposta</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><label for="nome">Nome: </label></td>
+                    <td>
+                        <form action="" id="form">
+                            <input type="text" id="nome" name="nome">
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="sobrenome">Sobrenome: </label></td>
+                    <td>
+                        <form action="" id="form">
+                            <input type="text" id="sobrenome" name="sobrenome">
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="email">E-mail: </label></td>
+                    <td><form action="" id="form">
+                            <input type="email" id="email" name="email">
+                    </form>
+                </td>
+                </tr>
+                <tr>
+                    <td><label for="idade">Idade: </label></td>
+                    <td><form action="" id="form">
+                        <input type="number" id="idade" name="idade" min="0" max="200">
+                    </form></td>
+                </tr>
+                <tr>
+                    <td><label for="lecionar">Vou lecionar: </label></td>
+                    <td><form action="" id="form"><select name="materia" id="materia">
+                        <option value="matematica" id="matematica">Matemática</option>
+                        <option value="portugues" id="portugues">Português</option>
+                        <option value="biologia" id="biologia">Biologia</option>
+                        <option value="ciencias" id="ciencias">Ciências</option>
+                        <option value="historia" id="historia">História</option>
+                        <option value="geografia" id="geografia">Geografia</option>
+                        <option value="artes" id="artes">Artes</option>
+                    </select></form></td>
+                </tr>
+                <tr>
+                    <td><label for="turno">Turno: </label></td>
+                    <td>
+                        <input type="checkbox" id="matutino">
+                        <label for="matutino">Matutino</label>
+                        <input type="checkbox" id="vespertino">
+                        <label for="vespertino">Vespertino</label>
+                        <input type="checkbox" id="noturno">
+                        <label for="noturno">Noturno</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="escolaridade">Escolaridade</label>
+                    <td><form action="" id="form">
+                        <select name="escolaridade" id="escolaridade">
+                            <option value="superiorcompleto">Superior Completo</option>
+                            <option value="cursandomestrado">Cursando Mestrado</option>
+                            <option value="mestradocompleto">Mestrado Completo</option>
+                            <option value="cursandodoutorado">Cursando Doutorado</option>
+                            <option value="doutoradocompleto">Doutorado Completo</option>
+                        </select>
+                    </form></td>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="sobremim">Sobre mim</label></td>
+                    <td>
+                        <form action="form" id="form">
+                            <textarea placeholder="Fale sobre você" name="sobremim" maxlength="200" id="sobremim" cols="20" rows="10"></textarea>
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;">
+                        <button type="submit">Enviar</button>
+                    </td>
+                </tr>
+                <br>
+                <br>
+
+            </tbody>
+        </table>
+
+
+        </form>
+
+
+    </section>
+</body>
+
+</html>

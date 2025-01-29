@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste HTML Moderno</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin-bottom: 0.5rem;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 20px;
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: #4CAF50;
+            margin-bottom: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f4f4f4;
+        }
+
+        input, select, textarea {
+            width: calc(100% - 20px);
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="checkbox"] {
+            width: auto;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #4CAF50;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Primeiro Teste HTML Moderno</h1>
+        <nav>
+            <ul>
+                <li><a href="#objetivo">Objetivo</a></li>
+                <li><a href="#regras">Regras</a></li>
+                <li><a href="#formulario">Formulário</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="objetivo">
+        <h2>Objetivo:</h2>
+        <h3>Criar formulário contendo os seguintes campos:</h3>
+        <ul>
+            <li>Nome Completo</li>
+            <li>E-mail</li>
+            <li>Idade</li>
+            <li>Para qual matéria você está se candidatando para lecionar:
+                (matemática, português, biologia, ciências, história, geografia ou artes)</li>
+            <li>Turnos disponíveis para lecionar</li>
+            <li>Nível de escolaridade: Ensino superior completo, Cursando mestrado,
+                Mestrado completo, Cursando doutorado, Doutorado completo.</li>
+            <li>Descrição sobre si mesmo (máximo 200 caracteres)</li>
+        </ul>
+    </section>
+
+    <section id="regras">
+        <h2>Regras:</h2>
+        <h3>O formulário deve ter:</h3>
+        <ul>
+            <li>O Formulário deve ter ID e nome de "FORM"</li>
+            <li>Os campos devem ser, respectivamente: NOME, EMAIL, IDADE, ASSUNTO,
+                TURNOSDISPONIVEIS, ESCOLARIDADE, DESCRICAO</li>
+            <li>O campo com as opções de matérias deve ter um ID também.</li>
+            <li>Código precisa ser semântico e com acessibilidade</li>
+        </ul>
+    </section>
+
+    <section id="formulario">
+        <h2>Formulário de Cadastro</h2>
+        <form id="form" action="#" method="post">
+            <table>
+                <tr>
+                    <td><label for="nome">Nome:</label></td>
+                    <td><input type="text" id="nome" name="nome"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">E-mail:</label></td>
+                    <td><input type="email" id="email" name="email"></td>
+                </tr>
+                <tr>
+                    <td><label for="idade">Idade:</label></td>
+                    <td><input type="number" id="idade" name="idade"></td>
+                </tr>
+                <tr>
+                    <td><label for="materia">Vou lecionar:</label></td>
+                    <td>
+                        <select id="materia" name="materia">
+                            <option value="matematica">Matemática</option>
+                            <option value="portugues">Português</option>
+                            <option value="biologia">Biologia</option>
+                            <option value="ciencias">Ciências</option>
+                            <option value="historia">História</option>
+                            <option value="geografia">Geografia</option>
+                            <option value="artes">Artes</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Turno:</td>
+                    <td>
+                        <input type="checkbox" id="matutino" name="turno" value="matutino">
+                        <label for="matutino">Matutino</label>
+                        <input type="checkbox" id="vespertino" name="turno" value="vespertino">
+                        <label for="vespertino">Vespertino</label>
+                        <input type="checkbox" id="noturno" name="turno" value="noturno">
+                        <label for="noturno">Noturno</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="escolaridade">Escolaridade:</label></td>
+                    <td>
+                        <select id="escolaridade" name="escolaridade">
+                            <option value="superiorcompleto">Superior Completo</option>
+                            <option value="cursandomestrado">Cursando Mestrado</option>
+                            <option value="mestradocompleto">Mestrado Completo</option>
+                            <option value="cursandodoutorado">Cursando Doutorado</option>
+                            <option value="doutoradocompleto">Doutorado Completo</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="sobremim">Sobre mim:</label></td>
+                    <td><textarea id="sobremim" name="sobremim" rows="4" maxlength="200"></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;">
+                        <button type="submit">Enviar</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Teste HTML Moderno</p>
+    </footer>
+</body>
+
+</html>
